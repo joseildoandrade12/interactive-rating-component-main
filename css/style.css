@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.secao {
+  max-width: 1440px;
+  height: 450px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 30px;
+  display: block;
+}
+
+.inicio.ativo{
+  display: none;
+}
+
+.star {
+  background-color: hsla(216, 12%, 8%, 0.342);
+  display: inline;
+  margin: 20px 0px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.secao h1 {
+  color: white;
+  margin: 30px 0px;
+  margin-bottom: 10px;
+}
+
+.secao p {
+  font-size: 15px;
+  max-width: 350px;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+li {
+  width: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: hsla(216, 12%, 8%, 0.356);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+li.ativo{
+  background-color: hsl(217, 12%, 63%);
+}
+
+li:hover {
+  background-color: hsl(25, 97%, 53%);
+  transition: .5s;
+}
+
+a{
+  display: block;
+  text-align: center;
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+a:hover{
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.result {
+  display: none;
+}
+
+.result.ativo{
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.result .res{
+  padding: 10px 20px;
+  color: hsl(25, 97%, 53%);
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.result h1{
+  margin: 10px;
+}
+
+.result img{
+  margin: 40px 0px;
+}
